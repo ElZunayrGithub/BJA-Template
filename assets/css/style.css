@@ -218,6 +218,16 @@ body#auth-page.active{
 #auth-page.active .footer .copyright span{ 
     color: var(--color-secondary-dark);
 }
+#auth-page .custom-tooltip.tooltip > .tooltip-inner
+{
+    color: var(--color-primary-light);
+    background: var(--color-primary-dark);
+}
+#auth-page.active .custom-tooltip.tooltip > .tooltip-inner
+{
+    color: var(--color-secondary-light);
+    background: var(--color-secondary-dark);
+}
 /* Responsive Auth Page */
 
 @media (max-width: 991px){
