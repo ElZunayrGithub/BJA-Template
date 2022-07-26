@@ -1,0 +1,258 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+/* Root */
+:root{ 
+    --color-primary: #6e6a6f;
+    --color-primary-dark: #353535;
+    --color-primary-light: #d4d2d5;
+    --color-secondary: #81929E;
+    --color-secondary-dark: #284B63;
+    --color-secondary-light: #D9D9D9;
+}
+/* General */
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body#auth-page{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--color-primary-light);
+    transition: .5s;
+}
+body#auth-page.active{
+    background: var(--color-secondary-light);
+    transition: .5s;
+}
+#auth-page .wrapper{
+    position: relative;
+    width: 50rem;
+    height: 32rem;
+    margin: 1.25rem;
+}
+#auth-page .wrapper .box-bg{
+    position: absolute;
+    top: 2.5rem;
+    width: 100%;
+    height: 26rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, .2);
+    border-radius: .5rem;
+    box-shadow: 0 5px 45px var(--color-primary);
+}
+#auth-page.active .wrapper .box-bg{
+    box-shadow: 0 5px 45px var(--color-secondary);
+}
+#auth-page .wrapper .box-bg .box{
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#auth-page .wrapper .box-bg .box .title{
+    color: var(--color-primary-dark);
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 0.5rem;
+}
+#auth-page.active .wrapper .box-bg .box .title{
+    color: var(--color-secondary-dark);
+}
+#auth-page .wrapper .box-bg .box .btn{
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    background: var(--color-primary-dark);
+    color: var(--color-primary-light);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    border: none;
+    border-radius: .5rem;
+}
+#auth-page .wrapper .box-bg .box .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--color-primary-light);
+}
+#auth-page .wrapper .box-bg .box .btn:hover{
+    background: var(--color-primary);
+    color: var(--color-primary-light);
+}
+#auth-page.active .wrapper .box-bg .box .btn{
+    background: var(--color-secondary-dark);
+    color: var(--color-secondary-light);
+}
+#auth-page.active .wrapper .box-bg .box .btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem var(--color-secondary-light);
+}
+#auth-page.active .wrapper .box-bg .box .btn:hover{
+    background: var(--color-secondary);
+    color: var(--color-secondary-light);
+}
+#auth-page .form-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: var(--color-primary-dark);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 45px var(--color-primary);
+    transition: .5s ease-in-out;
+    overflow: hidden;
+    border-radius: .5rem;
+}
+#auth-page.active .form-box.active{
+    left: 50%;
+    background: var(--color-secondary-dark);
+    box-shadow: 0 5px 45px var(--color-secondary);
+}
+#auth-page .form-box .form{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 3.2rem;
+    transition: .5s;
+}
+#auth-page .form-box .sign-in-form{
+    transition-delay: .25s;
+}
+#auth-page.active .form-box.active .sign-in-form{
+    left: -100%;
+    transition-delay: 0s;
+}
+#auth-page .form-box .sign-up-form{
+    left: 100%;
+    transition-delay: .0s;
+}
+#auth-page.active .form-box.active .sign-up-form{
+    left: 0;
+    transition-delay: .25s;
+}
+#auth-page .form-box .form .title{
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    align-items: center;
+    text-align: center;
+    color: var(--color-primary-light);
+    margin-bottom: 1.2rem;
+}
+#auth-page.active .form-box.active .form .title{
+    color: var(--color-secondary-light);
+}
+#auth-page .form-box .form form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#auth-page .form-box .form form input{
+    width: 100%;
+    margin-bottom: 1.2rem;
+    padding: .6rem;
+    outline: none;
+    font-size: 1rem;
+    border: 1px solid var(--color-primary-light);
+    border-radius: .5rem;
+}
+#auth-page.active .form-box.form-box.active .form form input{ 
+    border: 1px solid var(--color-secondary-light); 
+}
+#auth-page .form-box .form form input[type='submit']{
+    background: var(--color-primary-light);
+    border: none;
+    border-radius: .5rem;
+    color: var(--color-primary-dark); 
+    cursor: pointer; 
+    text-transform: uppercase;
+}
+#auth-page .form-box .form form input[type='submit']:hover{
+    background: var(--color-primary); 
+    color: var(--color-primary-light); 
+}
+#auth-page.active .form-box.active .form form input[type='submit']{
+    background: var(--color-secondary-light); 
+    color: var(--color-secondary-dark);  
+    border: none;
+}
+#auth-page.active .form-box.active .form form input[type='submit']:hover{
+    background: var(--color-secondary); 
+    color: var(--color-secondary-light); 
+}
+#auth-page .form-box .form form .forget{
+    text-decoration: none;
+    color: var(--color-primary);
+    text-align: right;
+}
+#auth-page .form-box .form form .forget:hover{
+    color: var(--color-primary-light);
+}
+#auth-page .footer{
+    margin: 35rem 18rem;
+}
+#auth-page .footer .copyright{
+    padding: 0 1.5rem;
+}
+#auth-page .footer .copyright span{
+    font-size: .6rem;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    color: var(--color-primary-dark);
+}
+#auth-page.active .footer .copyright span{ 
+    color: var(--color-secondary-dark);
+}
+/* Responsive Auth Page */
+
+@media (max-width: 991px){
+    #auth-page .wrapper{
+        max-width: 25rem;
+        height: 40.6rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #auth-page .wrapper .box-bg{
+        top: 0;
+        height: 100%;
+    }
+    #auth-page .form-box{
+        width: 100%;
+        height: 31.2rem;
+        top: 0;
+        box-shadow: none;
+    }
+    #auth-page .wrapper .box-bg .box{
+        position: absolute;
+        width: 100%;
+        height: 9.4rem;
+        bottom: 0;
+    }
+    #auth-page .wrapper .box-bg .box-sign-in{
+        top: 0;
+    }
+    #auth-page.active .form-box.active{
+        left: 0;
+        top: 9.4rem;
+    }
+    #auth-page .footer{
+        margin: 45rem 0;
+        margin-bottom: 0;
+    }
+}
