@@ -1,12 +1,254 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta Start -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Dashboard page BJA Template">
+    <meta name="author" content="BJA Development">
+    <!-- Meta End -->
+    <!-- Title Start -->
+    <title>Dashboard Page BJA Template</title>
+    <!-- Title End -->
+    <!-- Bootstrap Start -->
+    <link rel="stylesheet" href="assets\vendors\bootstrap\css\bootstrap.min.css">
+    <link rel="stylesheet" href="assets\vendors\bootstrap\icon\font\bootstrap-icons.css">
+    <!-- Bootstrap End -->
+    <!-- CSS Start -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- CSS End --> 
+    <!-- JQuery Start -->
+    <script src="assets/vendors/jquery/jquery.min.css"></script>
+    <!-- JQuery End -->
 </head>
 <body>
+    <!-- Page Wrapper Start -->
+    <div id="wrapper">
+        <!-- Sidebar Start -->
+        <ul class="navbar-nav sidebar accordion" id="accordionSidebar">
+            <!-- Side Brand Start -->
+            <a href="index.html" class="sidebar-brand d-flex align-items-center">
+                <div class="sidebar-brand-icon">
+                    <img src="assets\imgs\logo.png" alt="BJA Development" width="75" height="75">
+                </div>
+                <div class="sidebar-brand-text">brand name</div>
+            </a>
+            <!-- Side Brand End -->
+            <!-- Divider Start -->
+            <hr class="sidebar-divider mt-0">
+            <!-- Divider End -->
+            <!-- Nav Item - Dashboard Start -->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                    <i class="bi bi-speedometer2"></i>
+                    <span>Dashboard</span></a>
+            </li>
+            <!-- Nav Item Dashboard End -->
+            <!-- Divider Start -->
+            <hr class="sidebar-divider">
+            <!-- Divider End -->
+            <!-- Heading Start -->
+            <div class="sidebar-heading">
+                Interface
+            </div>
+            <!-- Heading End -->
+            <!-- Nav Item - Pages Collapse Menu Start -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#component" data-bs-toggle="collapse" data-target="#component"
+                    aria-expanded="false" aria-controls="component">
+                    <i class="bi bi-gear"></i>
+                    <span>Components</span>
+                </a>
+                <div id="component" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Components:</h6>
+                        <a class="collapse-item" href="buttons.html">Buttons</a>
+                        <a class="collapse-item" href="cards.html">Cards</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Nav Item - Pages Collapse Menu End -->
+            <!-- Nav Item - Utilities Collapse Menu Start -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#utilities" data-bs-toggle="collapse" data-target="#utilities"
+                    aria-expanded="false" aria-controls="utilities">
+                    <i class="bi bi-columns-gap"></i>
+                    <span>Utilities</span>
+                </a>
+                <div id="utilities" class="collapse" aria-labelledby="headingUtilities"
+                data-bs-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Custom Utilities:</h6>
+                        <a class="collapse-item" href="utilities-color.html">Colors</a>
+                        <a class="collapse-item" href="utilities-border.html">Borders</a>
+                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
+                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Nav Item - Utilities Collapse Menu End -->
+            <!-- Divider Start -->
+            <hr class="sidebar-divider">
+            <!-- Divider End -->
+            <!-- Heading Start -->
+            <div class="sidebar-heading">
+                Addons
+            </div>
+            <!-- Heading End -->
+            <!-- Nav Item - Pages Collapse Menu Start -->
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="#collapsePages" data-bs-toggle="collapse" data-bs-target="#collapsePages"
+                    aria-expanded="true" aria-controls="collapsePages">
+                    <i class="bi bi-archive"></i>
+                    <span>Pages</span>
+                </a>
+                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-bs-parent="#accordionSidebar">
+                    <div class="py-2 collapse-inner rounded">
+                        <h6 class="collapse-header">Login Screens:</h6>
+                        <a class="collapse-item" href="login.html">Login</a>
+                        <a class="collapse-item" href="register.html">Register</a>
+                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <div class="collapse-divider"></div>
+                        <h6 class="collapse-header">Other Pages:</h6>
+                        <a class="collapse-item" href="404.html">404 Page</a>
+                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                    </div>
+                </div>
+            </li>
+            <!-- Nav Item - Pages Collapse Menu End -->
+            <!-- Nav Item - Charts Start -->
+            <li class="nav-item">
+                <a class="nav-link" href="charts.html">
+                    <i class="bi bi-bar-chart"></i>
+                    <span>Charts</span></a>
+            </li>
+            <!-- Nav Item - Charts End -->
+            <!-- Nav Item - Tables Start-->
+            <li class="nav-item">
+                <a class="nav-link" href="tables.html">
+                    <i class="bi bi-table"></i>
+                    <span>Tables</span></a>
+            </li>
+            <!-- Nav Item - Tables End-->
+            <!-- Divider Start -->
+            <hr class="sidebar-divider d-none d-md-block">
+            <!-- Divider End -->
+        </ul>
+        <!-- Sidebar End -->
+        <!-- Content Wrapper Start -->
+        <div id="content-wrapper" class="d-flex flex-col">
+            <!-- Main-Content Start -->
+            <div id="content">
+                <!-- Topbar Start -->
+                <nav class="navbar navbar-expand topbar shadow d-flex justify-content-between">
+                    <button id="sidebarToggleTop" class="btn mr-3">
+                        <i class="bi bi-three-dots"></i>
+                    </button>
+                    <!-- Topbar Search Start -->
+                    <form action="" class="search">
+                        <div class="input-group rounded-pill p-1">
+                            <div class="input-group-prepend border-0">
+                                <button id="button-addon4" type="button" class="btn">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                            <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon4" class="form-control">
+                        </div>
+                    </form>
+                    <!-- Topbar Search End -->
+                    <!-- Topbar Navbar Start -->
+                    <ul class="navbar-nav ml-auto">
+                        <!-- Nav Item - Alerts Start -->
+                        <li class="nav-item mx-1">
+                            <a class="nav-link dropdown-toggle position-relative" href="#" id="alertsDropdown" role="button"
+                                data-bs-toggle="dropdown"  aria-expanded="false">
+                                <i class="bi bi-bell"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger">3+</span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-menu dropdown-menu-lg-end"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Alerts Center
+                                </h6>
+                                <a class="dropdown-item d-flex align-items-center" href="#"> 
+                                    <div>
+                                        <div class="small text-gray-500">December 12, 2019</div>
+                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#"> 
+                                    <div>
+                                        <div class="small text-gray-500">December 7, 2019</div>
+                                        $290.29 has been deposited into your account!
+                                    </div>
+                                </a>
+                                <a class="dropdown-item d-flex align-items-center" href="#"> 
+                                    <div>
+                                        <div class="small text-gray-500">December 2, 2019</div>
+                                        Spending Alert: We've noticed unusually high spending for your account.
+                                    </div>
+                                </a>
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+                        <!-- Nav Item - Alerts End -->
+                        <div class="topbar-divider d-none d-sm-block"></div>
+                        <!-- User Start -->
+                        <li class="user text-end">
+                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="assets\imgs\logo.png" alt="BJA Development" width="35" height="35" class="rounded-circle">
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end text-small" aria-labelledby="dropdownUser1">
+                                <li>
+                                    <a class="dropdown-item" href="#">New project...</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Settings</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Sign out</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <!-- User End -->
+
+                    </ul>
+                    <!-- Topbar Navbar End --> 
+                </nav>
+                <!-- Topbar End -->
+                <!-- Page Content Start -->
+                <div class="container-fluid">
+                    <!-- Page Heading Start -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                        <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                            <i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                    </div>
+                    <!-- Page Heading End -->
+                </div>
+                <!-- Page Content End -->
+            </div>
+            <!-- Main-Content End -->
+        </div>
+        <!-- Content Wrapper End -->
+    </div>
+    <!-- Page Wrapper End -->
     
+<!-- Bootstrap JS Start -->
+<script src="assets\vendors\bootstrap\js\bootstrap.bundle.min.js"></script>
+<!-- Bootstrap JS Start --> 
+<!-- JS Start -->
+<script src="assets/js/custom.js"></script>
+<!-- JS End -->
 </body>
+<!-- Body ID Auth Page End -->
 </html>
