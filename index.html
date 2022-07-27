@@ -141,92 +141,192 @@
             <!-- Main-Content Start -->
             <div id="content">
                 <!-- Topbar Start -->
-                <nav class="navbar navbar-expand topbar shadow d-flex justify-content-between">
-                    <button id="sidebarToggleTop" class="btn mr-3">
-                        <i class="bi bi-three-dots"></i>
-                    </button>
+                <nav class="navbar navbar-expand topbar shadow d-flex justify-content-between mb-4">
+                    <!-- Sidebar Toggle Start -->
+                    <div class="p-0">
+                        <button id="sidebarToggleTop" class="btn">
+                            <i class="bi bi-three-dots"></i>
+                        </button>
+                    </div>
+                    <!-- Sidebar Toggle End -->
                     <!-- Topbar Search Start -->
-                    <form action="" class="search">
-                        <div class="input-group rounded-pill p-1">
-                            <div class="input-group-prepend border-0">
-                                <button id="button-addon4" type="button" class="btn">
-                                    <i class="bi bi-search"></i>
-                                </button>
+                    <div class="p-2">
+                        <form action="" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100">
+                            <div class="rounded rounded-pill shadow-sm navbar-search">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <button id="button-addon2" type="submit" class="btn">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </div>
+                                    <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon2" class="rounded-pill form-control border-0 small">
+                                </div>
                             </div>
-                            <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon4" class="form-control">
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                     <!-- Topbar Search End -->
                     <!-- Topbar Navbar Start -->
-                    <ul class="navbar-nav ml-auto">
-                        <!-- Nav Item - Alerts Start -->
-                        <li class="nav-item mx-1">
-                            <a class="nav-link dropdown-toggle position-relative" href="#" id="alertsDropdown" role="button"
-                                data-bs-toggle="dropdown"  aria-expanded="false">
-                                <i class="bi bi-bell"></i>
-                                <!-- Counter - Alerts -->
-                                <span class="position-absolute start-100 translate-middle badge rounded-pill bg-danger">3+</span>
-                            </a>
-                            <!-- Dropdown - Alerts -->
-                            <div class="dropdown-menu dropdown-menu-lg-end"
-                                aria-labelledby="alertsDropdown">
-                                <h6 class="dropdown-header">
-                                    Alerts Center
-                                </h6>
-                                <a class="dropdown-item d-flex align-items-center" href="#"> 
-                                    <div>
-                                        <div class="small text-gray-500">December 12, 2019</div>
-                                        <span class="font-weight-bold">A new monthly report is ready to download!</span>
-                                    </div>
+                    <div class="p-2">
+                        <ul class="navbar-nav ml-auto">
+                            <!-- Nav Item - Search Dropdown (Visible Only XS) Start -->
+                            <li class="nav-item dropdown d-sm-none">
+                                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bi bi-search"></i>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#"> 
-                                    <div>
-                                        <div class="small text-gray-500">December 7, 2019</div>
-                                        $290.29 has been deposited into your account!
-                                    </div>
+                                <div class="dropdown-menu dropdown-menu-end shadow"
+                                    aria-labelledby="searchDropdown">
+                                    <form action="" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100">
+                                        <div class="rounded rounded-pill shadow-sm navbar-search">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <button id="button-addon2" type="submit" class="btn">
+                                                        <i class="bi bi-search"></i>
+                                                    </button>
+                                                </div>
+                                                <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon2" class="rounded-pill form-control border-0 small">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </li>
+                            <!-- Nav Item - Search Dropdown (Visible Only XS) End -->
+                            <!-- Nav Item - Alerts Start -->
+                            <li class="nav-item mx-1 dropdown">
+                                <a class="nav-link dropdown-toggle px-0" href="#" id="alertsDropdown" role="button"
+                                    data-bs-toggle="dropdown"  aria-expanded="false">
+                                    <i class="bi bi-bell"></i>
+                                    <!-- Counter - Alerts -->
+                                    <span class="start-100 translate-middle badge rounded-pill bg-danger">3+</span>
                                 </a>
-                                <a class="dropdown-item d-flex align-items-center" href="#"> 
-                                    <div>
-                                        <div class="small text-gray-500">December 2, 2019</div>
-                                        Spending Alert: We've noticed unusually high spending for your account.
-                                    </div>
+                                <!-- Dropdown - Alerts -->
+                                <div class="dropdown-menu dropdown-menu-lg-end"
+                                    aria-labelledby="alertsDropdown">
+                                    <h6 class="dropdown-header">
+                                        Alerts Center
+                                    </h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#"> 
+                                        <div class="me-3">
+                                            <div class="icon-circle bg-primary">
+                                                <i class="bi bi-file-post"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small fw-light">December 12, 2019</div>
+                                            <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#"> 
+                                        <div class="me-3">
+                                            <div class="icon-circle bg-primary">
+                                                <i class="bi bi-file-post"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small fw-light">December 7, 2019</div>
+                                            $290.29 has been deposited into your account!
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#"> 
+                                        <div class="me-3">
+                                            <div class="icon-circle bg-primary">
+                                                <i class="bi bi-file-post"></i>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <div class="small fw-light">December 2, 2019</div>
+                                            Spending Alert: We've noticed unusually high spending for your account.
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                                </div>
+                            </li>
+                            <!-- Nav Item - Alerts End -->
+                            <!-- Nav Item - Messages Start -->
+                            <li class="nav-item dropdown mx-1">
+                                <a class="nav-link dropdown-toggle px-0" href="#" id="messagesDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="bi bi-envelope"></i>
+                                    <!-- Counter - Messages -->
+                                    <span class="start-100 translate-middle badge rounded-pill bg-danger">7</span>
                                 </a>
-                                <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                            </div>
-                        </li>
-                        <!-- Nav Item - Alerts End -->
-                        <div class="topbar-divider d-none d-sm-block"></div>
-                        <!-- User Start -->
-                        <li class="user text-end">
-                            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="assets\imgs\logo.png" alt="BJA Development" width="35" height="35" class="rounded-circle">
-                            </a>
-                            <ul class="dropdown-menu dropdown-menu-end text-small" aria-labelledby="dropdownUser1">
-                                <li>
-                                    <a class="dropdown-item" href="#">New project...</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Settings</a>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Profile</a>
-                                </li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <a class="dropdown-item" href="#">Sign out</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <!-- User End -->
-
-                    </ul>
+                                <!-- Dropdown - Messages -->
+                                <div class="dropdown-menu dropdown-menu-lg-end"
+                                    aria-labelledby="messagesDropdown">
+                                    <h6 class="dropdown-header">
+                                        Message Center
+                                    </h6>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="image me-3">
+                                            <img class="rounded-circle" src="assets\imgs\logo.png"
+                                                alt="BJA Development" width="35" height="35">
+                                            <div class="status-indicator bg-success"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                                problem I've been having.</div>
+                                            <div class="small fw-light">Emily Fowler · 58m</div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item d-flex align-items-center" href="#">
+                                        <div class="image me-3">
+                                            <img class="rounded-circle" src="assets\imgs\logo.png"
+                                                alt="BJA Development" width="35" height="35">
+                                            <div class="status-indicator bg-success"></div>
+                                        </div>
+                                        <div class="font-weight-bold">
+                                            <div class="text-truncate">Hi there! I am wondering if you can help me with a
+                                                problem I've been having.</div>
+                                            <div class="small fw-light">Emily Fowler · 58m</div>
+                                        </div>
+                                    </a>
+                                    <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                                </div>
+                            </li>
+                            <!-- Nav Item - Messages End -->
+                            <!-- Divider Start -->
+                            <div class="topbar-divider d-none d-sm-block"></div>
+                            <!-- Divider End -->
+                            <!-- User Start -->
+                            <li class="user text-end dropdown">
+                                <a href="#" class="d-block dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="assets\imgs\logo.png" alt="BJA Development" width="35" height="35" class="rounded-circle">
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-end text-small" aria-labelledby="dropdownUser1">
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bi bi-envelope-open me-3"></i>
+                                            New project...
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bi bi-envelope-open me-3"></i>
+                                            Settings
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bi bi-envelope-open me-3"></i>
+                                            Profile
+                                        </a>
+                                    </li> 
+                                    <li class="last pt-1">
+                                        <a class="dropdown-item" href="#">
+                                            <i class="bi bi-envelope-open me-3"></i>
+                                            Sign out
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- User End -->
+                        </ul>
+                    </div>
                     <!-- Topbar Navbar End --> 
                 </nav>
                 <!-- Topbar End -->
                 <!-- Page Content Start -->
-                <div class="container-fluid">
+                <div class="container-fluid position-relative">
                     <!-- Page Heading Start -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
