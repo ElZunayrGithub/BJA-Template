@@ -22,27 +22,29 @@
     <script src="assets/vendors/jquery/jquery.min.css"></script>
     <!-- JQuery End -->
 </head>
-<body>
-    <!-- Page Wrapper Start -->
+<!-- Id Page Top Start -->
+<body id="page-top">
+    <!-- Id Wrapper Start -->
     <div id="wrapper">
         <!-- Sidebar Start -->
         <ul class="navbar-nav sidebar accordion" id="accordionSidebar">
-            <!-- Side Brand Start -->
-            <a href="index.html" class="sidebar-brand d-flex align-items-center">
-                <div class="sidebar-brand-icon">
-                    <img src="assets\imgs\logo.png" alt="BJA Development" width="75" height="75">
+            <!-- Sidebar Brand Start -->
+            <a href="index.html" class="sidebar-brand d-flex align-items-center justify-content-center">
+                <div class="sidebar-brand-img rounded-circle">
+                    <img class="img-fluid" src="assets\imgs\logo.png" alt="BJA Development" width="50" height="50">
                 </div>
-                <div class="sidebar-brand-text">brand name</div>
+                <div class="sidebar-brand-text mx-3">BJA Development</div>
             </a>
-            <!-- Side Brand End -->
+            <!-- Sidebar Brand End -->
             <!-- Divider Start -->
             <hr class="sidebar-divider mt-0">
             <!-- Divider End -->
-            <!-- Nav Item - Dashboard Start -->
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">
-                    <i class="bi bi-speedometer2"></i>
-                    <span>Dashboard</span></a>
+            <!-- Nav Item Dashboard Start -->
+            <li class="nav-item active">
+                <a href="index.html" class="nav-link">
+                    <i class="bi bi-speedometer2 me-3"></i>
+                    <span class="title">dashboard</span>
+                </a>
             </li>
             <!-- Nav Item Dashboard End -->
             <!-- Divider Start -->
@@ -50,40 +52,37 @@
             <!-- Divider End -->
             <!-- Heading Start -->
             <div class="sidebar-heading">
-                Interface
+                interface
             </div>
             <!-- Heading End -->
-            <!-- Nav Item - Pages Collapse Menu Start -->
+            <!-- Nav Item - Components Collapse Menu Start  -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#component" data-bs-toggle="collapse" data-target="#component"
-                    aria-expanded="false" aria-controls="component">
-                    <i class="bi bi-gear"></i>
-                    <span>Components</span>
+                <a href="#componentcollapse" class="nav-link collapsed" data-bs-toggle="collapse" data-bs-target="#componentcollapse" aria-expanded="false" aria-controls="componentcollapse">
+                    <i class="bi bi-file-earmark-break me-3"></i>
+                    <span class="title">Components</span>
                 </a>
-                <div id="component" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionSidebar">
+                <div id="componentcollapse" class="collapse" aria-labelledby="headingComponent" data-bs-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Components:</h6>
-                        <a class="collapse-item" href="buttons.html">Buttons</a>
-                        <a class="collapse-item" href="cards.html">Cards</a>
+                        <h6 class="collapse-header">custom components :</h6>
+                        <a href="#" class="collapse-item">Buttonts</a>
+                        <a href="#" class="collapse-item">Cards</a>
                     </div>
                 </div>
             </li>
-            <!-- Nav Item - Pages Collapse Menu End -->
+            <!-- Nav Item - Components Collapse Menu End  -->
             <!-- Nav Item - Utilities Collapse Menu Start -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#utilities" data-bs-toggle="collapse" data-target="#utilities"
-                    aria-expanded="false" aria-controls="utilities">
-                    <i class="bi bi-columns-gap"></i>
-                    <span>Utilities</span>
+                <a href="#utilitiescollapse" class="nav-link collapsed" data-bs-toggle="collapse" data-bs-target="#utilitiescollapse" aria-expanded="false" aria-controls="utilitiescollapse">
+                    <i class="bi bi-gear me-3"></i>
+                    <span class="title">Utilities</span>
                 </a>
-                <div id="utilities" class="collapse" aria-labelledby="headingUtilities"
-                data-bs-parent="#accordionSidebar">
+                <div id="utilitiescollapse" class="collapse" aria-labelledby="headingUtilities" data-bs-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Custom Utilities:</h6>
-                        <a class="collapse-item" href="utilities-color.html">Colors</a>
-                        <a class="collapse-item" href="utilities-border.html">Borders</a>
-                        <a class="collapse-item" href="utilities-animation.html">Animations</a>
-                        <a class="collapse-item" href="utilities-other.html">Other</a>
+                        <h6 class="collapse-header">custom utilities :</h6>
+                        <a class="collapse-item" href="#">Colors</a>
+                        <a class="collapse-item" href="#">Borders</a>
+                        <a class="collapse-item" href="#">Animations</a>
+                        <a class="collapse-item" href="#">Other</a>
                     </div>
                 </div>
             </li>
@@ -93,62 +92,62 @@
             <!-- Divider End -->
             <!-- Heading Start -->
             <div class="sidebar-heading">
-                Addons
+                addons
             </div>
             <!-- Heading End -->
-            <!-- Nav Item - Pages Collapse Menu Start -->
+            <!-- Nav Item - Page Collapse Menu Start -->
             <li class="nav-item">
-                <a class="nav-link collapsed" href="#collapsePages" data-bs-toggle="collapse" data-bs-target="#collapsePages"
-                    aria-expanded="true" aria-controls="collapsePages">
-                    <i class="bi bi-archive"></i>
-                    <span>Pages</span>
+                <a href="#pagecollapse" class="nav-link collapsed" data-bs-toggle="collapse" data-bs-target="#pagecollapse" aria-expanded="false" aria-controls="pagecollapse">
+                    <i class="bi bi-clipboard me-3"></i>
+                    <span class="title">Pages</span>
                 </a>
-                <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-bs-parent="#accordionSidebar">
+                <div id="pagecollapse" class="collapse" aria-labelledby="headingPages" data-bs-parent="#accordionSidebar">
                     <div class="py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Login Screens:</h6>
-                        <a class="collapse-item" href="login.html">Login</a>
-                        <a class="collapse-item" href="register.html">Register</a>
-                        <a class="collapse-item" href="forgot-password.html">Forgot Password</a>
+                        <h6 class="collapse-header">auth screens :</h6>
+                        <a class="collapse-item" href="#">auth</a>
+                        <a class="collapse-item" href="#">forgot password</a>
                         <div class="collapse-divider"></div>
-                        <h6 class="collapse-header">Other Pages:</h6>
-                        <a class="collapse-item" href="404.html">404 Page</a>
-                        <a class="collapse-item" href="blank.html">Blank Page</a>
+                        <h6 class="collapse-header">other pages :</h6>
+                        <a class="collapse-item" href="#">404 page</a>
+                        <a class="collapse-item" href="#">blank page</a>
                     </div>
                 </div>
             </li>
-            <!-- Nav Item - Pages Collapse Menu End -->
-            <!-- Nav Item - Charts Start -->
+            <!-- Nav Item - Page Collapse Menu End -->
+            <!-- Nav Item Charts Start -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
-                    <i class="bi bi-bar-chart"></i>
-                    <span>Charts</span></a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-bar-chart me-3"></i>
+                    <span class="title">charts</span>
+                </a>
             </li>
-            <!-- Nav Item - Charts End -->
-            <!-- Nav Item - Tables Start-->
+            <!-- Nav Item Charts End -->
+            <!-- Nav Item Tables Start -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
-                    <i class="bi bi-table"></i>
-                    <span>Tables</span></a>
+                <a href="#" class="nav-link">
+                    <i class="bi bi-table me-3"></i>
+                    <span class="title">Tables</span>
+                </a>
             </li>
-            <!-- Nav Item - Tables End-->
+            <!-- Nav Item Tables End -->
             <!-- Divider Start -->
             <hr class="sidebar-divider d-none d-md-block">
             <!-- Divider End -->
         </ul>
         <!-- Sidebar End -->
         <!-- Content Wrapper Start -->
-        <div id="content-wrapper" class="d-flex flex-col">
-            <!-- Main-Content Start -->
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Main Content Start -->
             <div id="content">
                 <!-- Topbar Start -->
-                <nav class="navbar navbar-expand topbar shadow d-flex justify-content-between mb-4">
-                    <!-- Sidebar Toggle Start -->
+                <nav class="navbar navbar-expand topbar mb-4 d-flex justify-content-between shadow">
+                    <!-- Sidebar Toggle (Topbar) Start -->
                     <div class="p-0">
-                        <button id="sidebarToggleTop" class="btn">
+                        <button id="sidebarToggleTop" class="btn rounded-circle mr-3 ">
                             <i class="bi bi-three-dots"></i>
                         </button>
                     </div>
-                    <!-- Sidebar Toggle End -->
+                    <!-- Sidebar Toggle (Topbar) End -->
                     <!-- Topbar Search Start -->
                     <div class="p-2">
                         <form action="" class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100">
@@ -169,8 +168,8 @@
                     <div class="p-2">
                         <ul class="navbar-nav ml-auto">
                             <!-- Nav Item - Search Dropdown (Visible Only XS) Start -->
-                            <li class="nav-item dropdown d-sm-none">
-                                <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                            <li class="nav-item mx-3 dropdown">
+                                <a class="nav-link dropdown-toggle d-sm-none" href="#searchDropdown" id="searchDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <i class="bi bi-search"></i>
                                 </a>
@@ -293,6 +292,9 @@
                                     <img src="assets\imgs\logo.png" alt="BJA Development" width="35" height="35" class="rounded-circle">
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-end text-small" aria-labelledby="dropdownUser1">
+                                    <h6 class="dropdown-header">
+                                        Username
+                                    </h6>
                                     <li>
                                         <a class="dropdown-item" href="#">
                                             <i class="bi bi-envelope-open me-3"></i>
@@ -322,33 +324,127 @@
                             <!-- User End -->
                         </ul>
                     </div>
-                    <!-- Topbar Navbar End --> 
+                    <!-- Topbar Navbar End -->
                 </nav>
                 <!-- Topbar End -->
-                <!-- Page Content Start -->
-                <div class="container-fluid position-relative">
+                <!-- Begin Page Content Start -->
+                <div class="container-fluid">
                     <!-- Page Heading Start -->
-                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+                    <div class="d-sm-flex heading align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 title">Dashboard</h1>
                         <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
-                            <i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
+                            <i class="bi bi-download"></i> 
+                            Generate Report
+                        </a>
                     </div>
                     <!-- Page Heading End -->
+                    <!-- Content Row First Start -->
+                    <div class="row">
+                        <!-- Card Example Start -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card card-first shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col me-2">
+                                            <div class="fw-bold text-primary text-uppercase mb-1">
+                                                Earnings (Monthly)</div>
+                                            <div class="h5 mb-0 fw-bold">$40,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#">
+                                                <i class="bi bi-calendar-event"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card Example End -->
+                        <!--  Card Example Start -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card card-second shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="fw-bold text-second text-uppercase mb-1">
+                                                earnings (Annual)</div>
+                                            <div class="h5 mb-0 fw-bold">$40,000</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="bi bi-cash-stack"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card Example End -->
+                        <!-- Card Example Start -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card card-third shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="fw-bold text-third text-uppercase mb-1">
+                                                task
+                                            </div>
+                                            <div class="row align-items-center">
+                                                <div class="col-auto">
+                                                    <div class="h5 mb-0 me-0 fw-bold">50%</div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="progress progress-sm mr-2">
+                                                        <div class="progress-bar bg-third" role="progressbar"
+                                                            style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                                                            aria-valuemax="100"></div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="bi bi-cash-stack"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card Example End -->
+                        <!-- Card Example Start -->
+                        <div class="col-xl-3 col-md-6 mb-4">
+                            <div class="card card-fourth shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row align-items-center">
+                                        <div class="col mr-2">
+                                            <div class="fw-bold text-fourth text-uppercase mb-1">
+                                                Pending Requests</div>
+                                            <div class="h5 mb-0 fw-bold">18</div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="bi bi-chat-dots"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card Example End -->
+                    </div>
+                    <!-- Content Row First End -->
+                    <!-- Content Row Second Start -->
+                    
+                    <!-- Content Row Second End -->
                 </div>
-                <!-- Page Content End -->
+                <!-- Begin Page Content End -->
             </div>
-            <!-- Main-Content End -->
+            <!-- Main Content End -->
         </div>
         <!-- Content Wrapper End -->
     </div>
-    <!-- Page Wrapper End -->
-    
+    <!-- Id Wrapper End -->
 <!-- Bootstrap JS Start -->
 <script src="assets\vendors\bootstrap\js\bootstrap.bundle.min.js"></script>
 <!-- Bootstrap JS Start --> 
 <!-- JS Start -->
 <script src="assets/js/custom.js"></script>
 <!-- JS End -->
-</body>
-<!-- Body ID Auth Page End -->
+</body> 
+<!-- Id Page Top End -->
 </html>
